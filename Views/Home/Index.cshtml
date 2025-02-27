@@ -1,0 +1,22 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+<!-- Views/Home/Index.cshtml -->
+@{
+    ViewData["Title"] = "Home Page";
+}
+<form action="/submit" method="post">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username">
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email">
+
+    <button type="submit">Submit</button>
+</form>
